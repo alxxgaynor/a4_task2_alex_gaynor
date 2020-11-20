@@ -1,0 +1,24 @@
+---
+title: "Assignment 4 Task 2"
+author: "Alex Gaynor"
+date: "11/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+
+
+Cite data: Kielland, K., F.S. Chapin, R.W. Ruess, and Bonanza Creek LTER. 2017. Snowshoe hare physical data in Bonanza Creek Experimental Forest: 1999-Present ver 22. Environmental Data Initiative. https://doi.org/10.6073/pasta/03dce4856d79b91557d8e6ce2cbcdc14 (Accessed 2020-11-20).
+
+
+```{r}
+read_csv(here, "data", :"bonanza_hares.csv")
+```
+
